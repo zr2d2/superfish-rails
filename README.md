@@ -2,6 +2,8 @@
 
 Superfish Homepage : http://users.tpg.com.au/j_birch/plugins/superfish/
 
+superfish-rails v1.6.0.x was built with Superfish v1.6.0
+
 # jQuery Superfish Dropdown Menu Plugin
 
 Our favourite aquatic superhero returns from his sojourn across the galaxy infused with astonishing, hitherto unseen new powers. In his modern incarnation (wearing a rather spiffy cape) Superfish is dedicated to keeping dropdown/flyout menus accessible across browsers great and small, in addition to adding support for newer touch devices (running Android, iOS, Windows, etc). All this **and** a pretty face.
