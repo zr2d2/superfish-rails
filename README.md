@@ -69,8 +69,8 @@ jQuery ->
 In view template file, add the followings:
 
 ```
-<ul id="sample-menu-1" class="sf-menu sf-navbar">
-	<li class="current">
+<ul id="sample-menu-1" class="sf-menu">
+	<li>
 		<a href="#a">menu item</a>
 		<ul>
 			<li>
