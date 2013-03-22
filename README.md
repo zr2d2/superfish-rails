@@ -1,6 +1,5 @@
 # Superfish::Rails
 
-Original Github Source : https://github.com/joeldbirch/superfish/
 Superfish Homepage : http://users.tpg.com.au/j_birch/plugins/superfish/
 
 # jQuery Superfish Dropdown Menu Plugin
@@ -43,7 +42,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To require Superfish UI modules, add the following to your application.js:
+
+```
+//= require superfish
+//= require hoverIntent
+```
+
+Also add the Superfish UI CSS to your application.css:
+
+```
+/*
+ *= require superfish
+ *= require superfish-vertical
+ *= require superfish-navbar
+ */
+```
 
 ## Contributing
 
