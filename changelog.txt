@@ -104,3 +104,33 @@ v1.5.12 	13 Mar 2013. Bug fix: Alter initialisation code to avoid requiring menu
 v1.5.13 	15 March 2013. Bug fix: height animations were getting stuck - fixed. Minor code optimisations.
 
 v1.6.0 		10 Mar 20113. Refactor CSS to allow unlimited menu-tiers without needing to add extra CSS. Semi-gracefully degrade IE6 (I recommend you polyfill with selectivizr.js if you need to support it) to allow reduced and simplified CSS. Prefer display:none submenu hiding rather than off-canvas - only closing animations will break if you do use off-canvas; everything else will still work. Refactor various bits of JS. Remove sfHover class prior to closing animation to avoid "trail of highlighted items" when hovering across items without hoverIntent active. Support IE9 on Windows Phone 7. Include Supersubs-like CSS, making that plugin largely redundant (except its max-width capability). Updated Supersubs to work with Superfish 1.6.0 just in case. Fix iOS: can now close submenus by tapping elsewhere. Fix iOS: back button will reload page (only way of resetting iOS hover state!). Added onBeforeHide callback. Fix Firefox bug with useClick initialisation. Use data() to store menu options.
+
+v1.6.1 		Fix issue #31 regarding submenus flashing open and closed under certain conditions in Firefox. Remove bgiframe JS file as part of degraded IE6 support.
+
+v1.6.2 		v1.6.1 was mislabelled as v1.6.0 in the superfish.js file.
+
+v1.6.3 		Merge pull request from @Spuds. Makes whitespace and other coding styles consistent, finally!
+
+v1.6.4 		v1.6.1 caused links with subs to be unfollowable. Quickfix is to (more or less) revert that change. Issue #31 will be reopened until I have a real solution.
+
+v1.6.4.1 	Didn't get the previous fix right.
+
+v1.6.5 		jQuery Plugin Registry doesn't like such granular version numbers.
+
+v1.6.6 		Fix issue #36. https://github.com/joeldbirch/superfish/issues/36
+
+v1.6.7 		Fix second part of issue #36, where there is only one submenu.
+
+v1.6.8 		Remove bfcache busting code after issue #37 discussion: https://github.com/joeldbirch/superfish/issues/37 . Bfcache busting deemed an unsuitable solution for Apple's buggy hover state after back button is used, but the code can be found at https://gist.github.com/joeldbirch/5268562 if needed.
+
+v1.6.9 		Fix issue #31 once and for all. https://github.com/joeldbirch/superfish/issues/31
+
+v1.7.0 		Complete code restructure to allow private and public methods and properties. Use cleaner, best-practice way of accessing public methods, eg: .superfish('show'). Old hideSuperfishUl and showSuperfishUl methods deprecated but will work (for a short while) as aliases. Add public 'destroy' method and 'onDestroy' callback (closes issue #51). Replace autoArrows functionality (generated spans and arrow image) with CSS-only arrows using pseudo-element borders (closes issue #35). Remove useClick feature (closes issue #47). Allow Supersubs CSS to optionally work on top-level of vertical menu. Rename some functions to reflect their toggleability. Prevent re-initialisation of Superfish. Add buttons to example page to demonstrate public methods (destroy, show, hide). Allow scrolling touch action on IE10 (better for small screens, ie. Windows Phone 8).
+
+v1.7.1 		Added missing onDestroy hook. Added tests. Handle multiple method calls silently.
+
+v1.7.2 		Simplify by removing click handler and 'follow' flags (possible due to removal of useClick feature). Use touch handler with '.one()' click handler to cancel link follows instead. Android browsers and IE10 now have 'fastclicks'. Sadly, iOS proved too buggy with touch event (nearby menu items sometimes highlighted on touch); relying on Apple's :hover hack instead (no fastclicks).
+
+v1.7.3 		Alter JS to allow mega-menus. Provide mega-menu CSS and example page. Added bower.json. Resolve some jsHint issues.
+
+v1.7.4		Set up Grunt. Tests no longer use Testem and can be run in a headless browser by running 'grunt test' from within the main project folder. Minor code alterations to suit jshint. Update jquery file to v1.10.1. Added minified version of Superfish.js. Reorganise files and folders. Alter bower.json.

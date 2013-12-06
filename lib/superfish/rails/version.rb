@@ -1,5 +1,5 @@
 module Superfish
   module Rails
-    VERSION = "1.6.0.1"
+    VERSION = "1.7.4"
   end
 end
